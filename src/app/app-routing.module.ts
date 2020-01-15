@@ -10,7 +10,7 @@ const routes: Routes =
   [
     {
       path: '', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'
-     // , canActivate: [AuthGuardService], runGuardsAndResolvers: 'always'
+      , canActivate: [AuthGuardService], runGuardsAndResolvers: 'always'
     },
     { path: 'login', component: LoginComponent },
     { path: '**', redirectTo: '', pathMatch: 'full' }
